@@ -1,5 +1,13 @@
+
+## 🔧 ツールと言語
+<a href="https://developer.apple.com/swift/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg" alt="swift" width="40" height="40"/> </a>
+<a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a>
+
+<br>
+
 ## 💬 概要
 ### 家計簿機能のついた買い物リスト
+(買い物リストを作成する習慣があるので)買い物リストが家計簿として使えたらいいなと思って作りました。
 
 <br>
 
@@ -29,9 +37,3 @@
 
 ## 🗺 全体の構成
 ![kousei](https://user-images.githubusercontent.com/98724087/152122366-8f4a2bbc-0e27-48d7-bd7b-a7e2b0534ce7.png)
-
-<br><br>
-
-## 🔧 ツールと言語
-<a href="https://developer.apple.com/swift/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg" alt="swift" width="40" height="40"/> </a>
-<a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a>
