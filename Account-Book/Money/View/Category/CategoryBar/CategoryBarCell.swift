@@ -59,15 +59,18 @@ class CategoryBarCell: CategoryCell {
     }
     
     func selectCategory(isSelected: Bool) {
-        let image = imageView.image(for: .normal)?.withRenderingMode(.alwaysTemplate)
-        imageView.setImage(image, for: .normal)
-        imageView.tintColor = isSelected ? .customNavyBlue() : .white
         imageView.backgroundColor = isSelected ? .customYellow() : .customLightNavyBlue()
         historyButton.isHidden = isSelected ? false : true
         
         if isSelected {
             guard let url = viewModel?.imageUrl?.absoluteString else { return }
             delegate?.selectedCategoryUrl(url: url)
+        }
+        
+        Timer.scheduledTimer(withTimeInterval: 0.02, repeats: false) { _ in
+            let image = self.imageView.image(for: .normal)?.withRenderingMode(.alwaysTemplate)
+            self.imageView.setImage(image, for: .normal)
+            self.imageView.tintColor = isSelected ? .customNavyBlue() : .white
         }
     }
 }

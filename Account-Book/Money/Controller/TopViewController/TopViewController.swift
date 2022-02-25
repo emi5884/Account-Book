@@ -342,7 +342,11 @@ class TopViewController: UIViewController {
     
     func changeSpendingSum(item: Item?) {
         var prices: [Int] = []
-        allItems.forEach { if $0.isChecked { prices.append($0.price) }}
+//        allItems.forEach { if $0.isChecked { prices.append($0.price) }}
+        
+        let thisMonth = DateFormatter.titleMonth(date: Date())
+        let thisMonthItems = allItems.filter { DateFormatter.titleMonth(date: $0.timeStamp.dateValue()) == thisMonth }
+        thisMonthItems.forEach { if $0.isChecked { prices.append($0.price) }}
         
         let sum = prices.reduce(0) { $0 + $1 }
         self.topViewHeader?.setSpendingPriceLabel(price: sum)
