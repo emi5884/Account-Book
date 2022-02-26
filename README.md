@@ -37,3 +37,10 @@
 
 ## 🗺 全体の構成
 ![kousei](https://user-images.githubusercontent.com/98724087/152122366-8f4a2bbc-0e27-48d7-bd7b-a7e2b0534ce7.png)
+
+<br>
+
+## ⭐️  特徴
+- no story board
+- MVVM
+
